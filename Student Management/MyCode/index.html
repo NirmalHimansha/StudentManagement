@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h3>Login</h3>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <p id="loginError" style="color: red; display: none;">Invalid username or password.</p>
+        </div>
+    </div>
+
+    <form id="userForm" style="display: none;">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id"><br>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age"><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" name="mobile" id="mobile"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female" id="female">
+        <label for="female">Female</label><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city"><br>
+
+        <button type="button" onclick="submitForm('register')">Register</button>
+        <button type="button" onclick="submitForm('search')">Search</button>
+        <button type="button" onclick="submitForm('update')">Update</button>
+        <button type="button" onclick="submitForm('delete')">Delete</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <pre id="modalMessage"></pre>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
