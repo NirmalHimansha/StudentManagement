@@ -14,8 +14,8 @@ This project is a great starting point for learning web development, handling fo
 # Technologies Used:
 
 >Frontend: HTML, CSS, JavaScript
->Backend: PHPv
->Styling: CSS for responsive design
+Backend: PHPv
+Styling: CSS for responsive design
 
 This system is ideal for beginners looking to build a functional web application while exploring form handling and user authentication. 🚀
  
